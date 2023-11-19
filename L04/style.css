@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+.intro {
+    position: absolute;
+    height: 100%;
+    width: 33.333%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid {
+    position: absolute;
+    height: 100%;
+    width: 33.333%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 33.333%;
+    top: 0%;
+}
+
+.outro {
+    position: absolute;
+    height: 100%;
+    width: 33.333%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 66.666%;
+    top: 0%;
+}
+
+span {
+    padding: 25px;
+    border: 1px;
+    background-color: white;
+    border-color: blanchedalmond;
+    border-radius: 90%;
+}
+
+
+
+
+
+
+
+#intro1 {
+    background-color: rgb(80, 1, 1);
+}
+
+#intro2 {
+    background-color: rgb(120, 1, 1);
+}
+
+#intro3 {
+    background-color: rgb(160, 1, 1);
+}
+
+
+
+
+
+#middle1 {
+    background-color: rgb(170, 85, 1);
+}
+
+#middle2 {
+    background-color: rgb(200, 105, 1);
+}
+
+#middle3 {
+    background-color: rgb(230, 125, 1);
+}
+
+
+
+
+
+#outro1 {
+    background-color: rgb(215, 215, 1);
+}
+
+#outro2 {
+    background-color: rgb(235, 235, 1);
+}
+
+#outro3 {
+    background-color: rgb(255, 255, 1);
+}
