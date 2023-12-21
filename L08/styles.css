@@ -1,0 +1,75 @@
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+.ausgabe {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgreen;
+}
+
+#eingabe {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 75%;
+    background-color: black;
+}
+
+#textBig {
+    font-size: 2.5rem;
+    margin: 100px;
+    color: white;
+}
+
+#textSmall {
+    width: 40%;
+    border: solid grey;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ZentrierteBox {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    margin: auto;
+    transform: translateY(-50%);
+    top: 50%;
+} */
