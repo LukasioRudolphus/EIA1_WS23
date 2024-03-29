@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="dat.gui.min.js" defer></script>
+    <script src="eia1_voyager_sdk.js" defer></script>
+    <script src="../Endabgabe/script.js" defer></script>
+    <title>Dungeoncrawler light</title>
+</head>
+
+<body>
+    <div id="allumfassend">
+        <div id="points">0</div>
+        <div class="room">
+            <div class="container"></div>
+        </div>
+        <img class="aktRaum" src="../Endabgabe/Bilder/DungeonRoom.png" alt="aktueller Raum">
+        <div class="playerC">
+            <img id="char" src="../Endabgabe/Bilder/PlayerChar256.png" alt="Monster">  
+            <div class="rahmen">
+                <div class="leben"></div>
+            </div>
+        </div>
+    </div>
+    <div id="boxEingabe">
+        <button class="reStart">Restart</button>
+        <div class="fightButtons">
+            <button class="attack">Angriff</button>
+            <button class="block">Blocken</button>
+            <button class="strongAttack">Starker Angriff</button>
+            <button class="rest">Ausruhen</button>
+        </div>
+        <button class="weiter">Weiter</button>
+    </div>
+</body>
+</html>

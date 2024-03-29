@@ -1,0 +1,411 @@
+html {
+    font-size: 16px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    position: absolute;
+    background-color: black;
+}
+
+
+
+
+
+
+
+#points {
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    top: 6%;
+    transform: translateX(-50%);
+    min-width: 50px;
+    color: white;
+    border: 5px solid white;
+    z-index: 2;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2px 7px 2px 5px;
+    outline: 2px solid black;
+}
+
+
+.defeatScreen {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    color: white;
+}
+
+.defeatBox {
+    position: relative;
+    display: block;
+    margin: auto;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 4rem;
+}
+
+.pointBox {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-49.5%);
+    font-size: 2rem;
+}
+
+.defeatRestart {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 70%;
+    margin-top: 110px;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+/* Simon Says */
+#lockedChest {
+    position: absolute;
+    height: 120px;
+    width: auto;
+    z-index: 2;
+    top: 50%;
+    left: 68%;
+    transform: translateY(-50%);
+}
+
+#simon {
+    position: absolute;
+    height: 506px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: black;
+    z-index: 2;
+    padding: 20px;
+    border: 2.5px solid lightgrey;
+    outline: 2px solid black;
+}
+
+.simonFeld {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: lightgrey;
+    margin-left: 12.5px;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Spieler und Gegner */
+
+/* gegner */
+
+.rahmenMonster {
+    border: solid 2px black;
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 1690%;
+    /* left: 20%; */
+    transform: translateX(-50%);
+    top: -15%;
+    z-index: 2;
+}
+
+.gegner {
+    height: 230px;
+    width: 10px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translateY(-50%);
+}
+
+#lebenGegner {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: red;
+    display: inline-block;
+}
+
+.monster {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    float: left;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+#ratte {
+    height: 200px;
+}
+
+#bigRatte {
+    height: 270px;
+}
+
+#aGolem, #livingArmor {
+    height: 300px;
+}
+
+/* Placer Character */
+
+.rahmen {
+    border: solid 2px black;
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 1915%;
+    /* left: 20%; */
+    transform: translateX(-50%);
+    top: -15%;
+    z-index: 2;
+}
+
+.playerC {
+    height: 260px;
+    width: 10px;
+    z-index: 2;
+    position: absolute;
+    bottom: 50%;
+    left: 31%;
+    transform: translateY(50%);
+}
+
+.leben {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: red;
+    display: inline-block;
+}
+
+#char {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    float: left;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+/* Buttons */
+
+.fightButtons > button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 190px;
+    border-radius: 3%;
+    border: 3px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#boxEingabe {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0%;
+    background-color: black;
+}
+
+.weiter, .reStart {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    font-size: 1.5rem;
+    border-radius: 5%;
+    font-weight: 500;
+}
+
+.reStart {
+    position: absolute;
+    left: 6%;
+}
+
+.weiter {
+    position: absolute;
+    left: 89.5%;
+}
+
+
+
+
+
+
+
+
+/* RAUM */
+
+#allumfassend {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+}
+
+.room {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: absolute;
+}
+
+[class*="raumAuswahlBox"] > div {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+[class*="wegIcon"] > img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Bild vom Raum */
+
+.aktRaum {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    float: left;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* Raumauswahl */
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+}
+
+[id*="col-"] {
+    float: left;
+    position: absolute;
+    height: 100%;
+    color: white;
+    z-index: 3;
+}
+
+#col-4-1 {
+    width: 25%;
+}
+
+#col-4-2 {
+    width: 25%;
+    left: 25%;
+}
+
+#col-4-3 {
+    width: 25%;
+    left: 50%;
+}
+
+#col-4-4 {
+    width: 25%;
+    left: 75%;
+}
+
+#col-3-1 {
+    width: 33.333%;
+}
+
+#col-3-2 {
+    width: 33.333%;
+    left: 33.333%;
+}
+
+#col-3-3 {
+    width: 33.333%;
+    left: 66.666%;
+}
+
+#col-2-1 {
+    width: 50%;
+}
+
+#col-2-2 {
+    width: 50%;
+    left: 50%;
+}
+
+#col-1-1 {
+    width: 100%;
+}
+
+.raumAuswahlBox {
+    position: relative;
+    height: 394px;
+    width: 294px;
+    margin: auto;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: white solid 3px;
+    z-index: 4;
+}
+
+.puzzle, .kampf, .leer {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 10;
+}
